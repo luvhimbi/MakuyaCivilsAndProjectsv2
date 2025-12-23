@@ -1,0 +1,46 @@
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Gallery of Our Work</h2>
+
+    <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#projectsCarousel" *ngFor="let img of images; let i = index"
+                [attr.data-bs-slide-to]="i" [class.active]="i === 0" aria-current="true"
+                [attr.aria-label]="'Slide ' + (i + 1)"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="carousel-inner rounded shadow-sm">
+        <div *ngFor="let img of images; let i = index" class="carousel-item" [class.active]="i === 0">
+          <img [src]="img.src" [alt]="img.alt" class="d-block w-100" style="height: 500px; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+<section class=" py-5">
+  <div class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="display-6 fw-bold mb-3">Ready to Start Your Project?</h2>
+        <p class="lead text-dark">Contact Makuya Civils & Projects today and let's bring your vision to life with expert craftsmanship.</p>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <a routerLink="/contact" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Get a Free Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>

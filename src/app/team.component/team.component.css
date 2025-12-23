@@ -1,0 +1,29 @@
+h2 {
+  color: var(--primary-blue);
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card img {
+  border: 3px solid var(--primary-blue);
+}
+
+.card i {
+  transition: transform 0.3s ease;
+}
+
+.card i:hover {
+  transform: scale(1.2);
+  color: var(--secondary-blue);
+}

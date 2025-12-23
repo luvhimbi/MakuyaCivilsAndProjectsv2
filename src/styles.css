@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+/* ================== Import Poppins ================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ================== Global Variables ================== */
+:root {
+  --primary-blue: #0d6efd; /* Blue accent color */
+  --secondary-blue: #0a58ca; /* Darker blue for hover effects */
+  --white-color: #ffffff; /* Main background color */
+  --text-color: #212529; /* Default text */
+  --light-gray: #f8f9fa; /* For subtle sections if needed */
+}
+
+/* ================== Body & Main Layout ================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white-color); /* Main background white */
+  color: var(--text-color) !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================== Links ================== */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-blue);
+  text-decoration: underline;
+}
+
+/* ================== Buttons ================== */
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--white-color);
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-blue);
+  border-color: var(--secondary-blue);
+}
+
+.btn-outline-primary {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-blue);
+  color: var(--white-color);
+  border-color: var(--primary-blue);
+}
+
+/* ================== Navbar ================== */
+.navbar {
+  background-color: var(--primary-blue) !important;
+}
+
+.navbar .nav-link {
+  color: var(--white-color) !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--light-gray) !important;
+}
+
+/* ================== Footer ================== */
+footer {
+  background-color: white !important;
+  color: black;
+}
+
+footer a {
+  color:black !important;
+}
+
+footer a:hover {
+  color: black !important;
+}
+
+/* ================== Headings ================== */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================== Sections ================== */
+section {
+  background-color: var(--white-color); /* Ensure all sections are white by default */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Optional: subtle light-gray background for certain sections */
+.bg-light {
+  background-color: var(--light-gray) !important;
+}
+
+/* ================== Text ================== */
+.text-primary {
+  color: var(--primary-blue) !important;
+}
+
+.text-white {
+  color: var(--white-color) !important;
+}

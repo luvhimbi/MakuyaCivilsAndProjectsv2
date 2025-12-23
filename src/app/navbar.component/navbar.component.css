@@ -1,0 +1,45 @@
+/* Force the navbar background to white */
+.navbar {
+  background-color: #ffffff !important;
+}
+
+/* Force the links to be black */
+.navbar .nav-link {
+  color: #000000 !important;
+}
+
+/* Keep the active link blue so users know where they are */
+.navbar .nav-link.active {
+  color: #007bff !important; /* or your specific brand blue */
+  font-weight: bold;
+}
+
+/* The "Construction" Brand Look */
+.navbar-brand {
+  font-family: 'Oswald', sans-serif; /* Or 'Roboto Condensed' */
+  letter-spacing: 1px;
+  color: #1a1a1a; /* Professional dark slate/black */
+}
+
+/* Optional: Add a small accent to the "Civils" part if you want more flair */
+.brand-accent {
+  color: #ffc107; /* Construction Yellow */
+}
+.navbar-brand {
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link.active {
+  color: #0d6efd !important; /* Matches btn-primary */
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 0.9rem; /* Shrinks slightly on mobile */
+  }
+}
